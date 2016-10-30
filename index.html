@@ -152,20 +152,18 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/jquery.poptrox.min.js"></script>
     <script type="text/javascript" src="js/jquery.scrollex.min.js"></script>
-    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script> -->
 
     <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
     <script type="text/javascript">
         var scene = document.getElementById('scene');
         var parallax = new Parallax(scene);
 
-
         $('#gallery')
             .scrollex({
-                top:        '100px',
+                top:        '30vh',
+                bottom:     '30vh',
                 delay:      0,
                 initialize: function() {
-                                console.log("enable!")
 
                                 var t = $(this);
 
@@ -174,7 +172,6 @@
 
                             },
                 terminate: function() {
-                               console.log("remove!")
 
                                var t = $(this);
 
