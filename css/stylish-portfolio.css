@@ -500,6 +500,18 @@ ul#scene {
   text-align: center;
 }
 
+.coming ul {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.coming .stores-list img {
+  padding: 3px;
+  width: 100%;
+  opacity: 0.5;
+  max-width: 200px;
+}
+
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
