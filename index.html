@@ -14,7 +14,6 @@
 
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" media="screen" href="//openfontlibrary.org/face/bury-caps" rel="stylesheet" type="text/css"/>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="icon" href="favicon.ico">
 
@@ -26,73 +25,94 @@
     <meta property="og:url" content="http://www.littlebriarrose.com/"/>
 </head>
 <body>
-
-    <!-- Side Menu -->
-    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle btn-menu"><img src="img/items.png" alt="menu" class="menu-img-icon"></a>
-    <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand"><a href="//blog.littlebriarrose.com/">Dev Blog!</a></li>
-            <li><a href="#top">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Screens</a></li>
-            <li><a href="#our-story">Our Story</a></li>
-            <li><a href="#download">Download</a></li>
-        </ul>
-    </div>
-    <!-- /Side Menu -->
-
     <!-- Full Page Image Header Area -->
-    <div id="top" class="header">
-        <div class="cover"><h1>LITTLE BRIAR ROSE</h1></div>
-        <div style="position: absolute; overflow: hidden; width: 100%; height: 100%;">
-            <div id="background-video-container">
-                <div class="video-placeholder"></div>
-                <div id="background-video"></div>
+    <div id="top" class="header" data-limit-x="100">
+        <ul id="scene">
+          <li style="text-align: center" class="layer" data-depth="0.05">
+              <img style="width: 70%" src="img/background.jpg">
+          </li>
+
+          <li class="layer" data-depth="0.10">
+                <img style="opacity: 0.5; left: 200%; position: relative; top: -30px; height: 100vw; width: 5.8vw;" src="img/column.jpg">
+          </li>
+          <li class="layer" data-depth="0.10">
+            <div style="width:100vw"></div>
+            <div style="position: absolute; right: 0;">
+                <img style="opacity: 0.5; right: 200%; position: relative; top: -30px; height: 100vw; width: 5.8vw;" src="img/column.jpg">
             </div>
-        </div>
-        <!-- <div class="video-container">
-            <video id="video-background" poster="homepage.jpg" width="640" height="360" preload autoplay muted>
-              <source src="//elfgamesbucket.s3.amazonaws.com/homepage.mp4" type="video/mp4">
-              <source src="//elfgamesbucket.s3.amazonaws.com/homepage.webm" type="video/webm">
-            </video>
-        </div> -->
-        <div class="vert-text bottom-text">
-            <a href="#about" class="btn btn-circle btn-scroll-down">
-                <i class="fa fa-angle-double-down"></i>
-            </a>
-        </div>
+          </li>
+
+          <li class="layer" data-depth="0.20">
+              <img style="height: 100vw; top: -30px; left: -50%; position: relative" src="img/column.jpg">
+          </li>
+          <li class="layer" data-depth="0.20">
+            <div style="width: 100vw"></div>
+            <div style="position: absolute; right: 0;">
+                <img style="right: -50%; position: relative; top: -30px; height: 100vw;" src="img/column.jpg">
+            </div>
+          </li>
+          <li class="layer" data-depth="0.15">
+            <div class="text-center" style="width: 100vw; margin-top: 10vw;">
+                <img style="width: 60%" src="img/logo.png">
+            </div>
+          </li>
+          <li class="layer" data-depth="0.40">
+            <div style="margin-top: 33vw; margin-left: -5vw; text-align: center">
+                <img style="width: 120vw" src="img/brambles.png">
+            </div>
+          </li>
+        </ul>
+        <h2 class="text-center subtitle">A stained glass adventure inspired by The Sleeping Beauty</h2>
     </div>
     <!-- /Full Page Image Header Area -->
 
     <!-- Intro -->
-    <div id="about" class="callout">
+
+    <div id="portfolio" class="portfolio">
         <div class="container">
-            <div class="row">
-                <div class="col-md-7 col-md-offset-3 text-center">
-                    <h2>Little Briar Rose is a point-and-click adventure game inspired by &ldquo;The Sleeping Beauty&rdquo;</h2>
-                    <h3>A brave prince is trying to save his princess from an evil spell  that forces her to sleep forever. In order to save her, he has to explore the enchanted forest which surrounds the castle where she is imprisoned.</h3>
-                </div>
+            <div class="videoWrapper">
+                <iframe width="960" height="480" src="http://www.youtube.com/embed/oikiam-jWgU?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </div>
     <!-- /Intro -->
 
+    <div class="portfolio coming">
+        <div class="text-center"><img style="max-width: 90%" src="img/comingsoon.png" alt="coming late november"></div>
+    </div>
+
     <!-- Portfolio -->
-    <div id="portfolio" class="portfolio">
-        <div class="container yoxview">
+    <div id="gallery" class="portfolio">
+        <div class="content container">
+            <!-- Lightbox Gallery  -->
+                <div class="container percent75 gallery">
+                    <div class="row images">
+                        <div class="col-md-6 col-xs-12"><a href="img/fulls/01.jpg" class="image fit from-left"><img src="img/thumbs/01.jpg" title="The Anonymous Red" alt="" /></a></div>
+                        <div class="col-md-6 col-xs-12"><a href="img/fulls/02.jpg" class="image fit from-right"><img src="img/thumbs/02.jpg" title="Airchitecture II" alt="" /></a></div>
+                    </div>
+                    <div class="row 0% images">
+                        <div class="col-md-6 col-xs-12"><a href="img/fulls/03.jpg" class="image fit from-left"><img src="img/thumbs/03.jpg" title="Air Lounge" alt="" /></a></div>
+                        <div class="col-md-6 col-xs-12"><a href="img/fulls/04.jpg" class="image fit from-right"><img src="img/thumbs/04.jpg" title="Carry on" alt="" /></a></div>
+                    </div>
+  <!--                   <div class="row 0% images">
+                        <div class="col-md-6 col-xs-12"><a href="img/fulls/05.png" class="image fit from-left"><img src="img/thumbs/05.png" title="The sparkling shell" alt="" /></a></div>
+                        <div class="col-md-6 col-xs-12"><a href="img/fulls/06.png" class="image fit from-right"><img src="img/thumbs/06.png" title="Bent IX" alt="" /></a></div>
+                    </div> -->
+                </div>
+        </div>
+<!--         <div class="container yoxview">
             <div class="row">
                 <div class="col-md-4 col-md-offset-2 text-center">
                     <div class="portfolio-item">
                         <a href="img/portfolio-1.jpg">
-                            <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                            <img class="img-portfolio img-responsive" src="img/portfolio-1.png">
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="portfolio-item">
                         <a href="img/portfolio-2.jpg">
-                            <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                            <img class="img-portfolio img-responsive" src="img/portfolio-2.png">
                         </a>
                     </div>
                 </div>
@@ -101,121 +121,28 @@
                 <div class="col-md-4 col-md-offset-2 text-center">
                     <div class="portfolio-item">
                         <a href="img/portfolio-3.jpg">
-                            <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                            <img class="img-portfolio img-responsive" src="img/portfolio-3.png">
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="portfolio-item">
                         <a href="img/portfolio-4.jpg">
-                            <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                            <img class="img-portfolio img-responsive" src="img/portfolio-4.png">
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     <!-- /Portfolio -->
-
-    <!-- Callout -->
-    <div id="our-story" class="intro intro-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <h2>Our story:</h2>
-                    <div class="row">
-                        <div class="col-xs-1"></div>
-                        <div class="col-xs-2 circle-container">
-                            <div class="circle">
-                                <div class="dummy-circle-height"></div>
-                                <div class="circle-inner green"></div>
-                            </div>
-                            <div class="line right"></div>
-                        </div>
-                        <div class="col-xs-2 circle-container">
-                            <div class="line left"></div>
-                            <div class="circle">
-                                <div class="dummy-circle-height"></div>
-                                <div class="circle-inner orange"></div>
-                            </div>
-                            <div class="line right"></div>
-                        </div>
-                        <div class="col-xs-2 circle-container">
-                            <div class="line left"></div>
-                            <div class="circle">
-                                <div class="dummy-circle-height"></div>
-                                <div class="circle-inner yellow"></div>
-                            </div>
-                            <div class="line right"></div>
-                        </div>
-                        <div class="col-xs-2 circle-container">
-                            <div class="line left"></div>
-                            <div class="circle">
-                                <div class="dummy-circle-height"></div>
-                                <div class="circle-inner blue"></div>
-                            </div>
-                            <div class="line right"></div>
-                        </div>
-                        <div class="col-xs-2 circle-container">
-                            <div class="line left"></div>
-                            <div class="circle">
-                                <div class="dummy-circle-height"></div>
-                                <div class="circle-inner"></div>
-                            </div>
-                        </div>
-                        <!-- <div class="col-xs-2 circle-container">
-                            <div class="line left"></div>
-                            <div class="circle">
-                                <div class="dummy-circle-height"></div>
-                                <div class="circle-inner"></div>
-                            </div>
-                        </div> -->
-                    </div>
-
-                    <div class="row descriptions">
-                        <div class="col-xs-1">
-                        </div>
-                        <div class="col-xs-2">
-                            <p class="date">29/05/2014</p>
-                            <p>Start development!</p>
-                        </div>
-                        <div class="col-xs-2">
-                            <p class="date">30/06/2014</p>
-                            <p>First release for the IGMC 2014</p>
-                        </div>
-                        <div class="col-xs-2">
-                            <p class="date">1/07/2014</p>
-                            <p>Start remake</p>
-                        </div>
-                        <div class="col-xs-2">
-                            <p class="date">1/10/2014</p>
-                            <p>Contest results: Third Place!</p>
-                        </div>
-                        <div class="col-xs-2">
-                            <p class="date">2015</p>
-                            <p>Release?</p>
-                        </div>
-                        <!-- <div class="col-xs-2">
-                            <p></p>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Callout -->
-
 
     <!-- Call to Action -->
     <div id="download" class="call-to-action">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
-                    <h3>Our game is coming soon!</h3>
-                    <h3>You can follow our development on our network:</h3>
-                    <a href="//blog.littlebriarrose.com/" class="btn btn-lg btn-primary left-position" target="_blank">
-                        <span class="glyphicon glyphicon-wrench"></span> Dev Blog
-                    </a>
+                    <h3>#LITTLEBRIARROSE</h3>
                     <ul class="list-inline">
                         <li>
                             <a href="https://www.facebook.com/LittleBriarRoseGame" target="_blank">
@@ -228,179 +155,105 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/user/ElfGamesWorks" target="_blank">
-                                <i class="fa fa-youtube fa-4x"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="//tumblr.littlebriarrose.com/" target="_blank">
-                                <i class="fa fa-tumblr fa-4x"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.google.com/+LittleBriarRoseGame" target="_blank">
-                                <i class="fa fa-google-plus fa-4x"></i>
-                            </a>
-                        </li>
-                        <li>
                             <a href="mailto:elfgamesworks@gmail.com">
                                 <i class="fa fa-envelope fa-4x"></i>
                             </a>
                         </li>
                     </ul>
                     <br/>
-                    <h4>...or just try the old prototype we did for the contest!</h4>
-                    <a href="https://s3.amazonaws.com/elfgamesbucket/Little+Briar+Rose.zip" class="btn btn-lg btn-success">Windows</a>
-                    <a href="https://s3.amazonaws.com/elfgamesbucket/LittleBriarRose.dmg" class="btn btn-lg btn-default">Mac OS X</a>
+                    <a href="http://www.elfgamesworks.com/presskit/sheet.php?p=little_briar_rose" target="_blank">PRESS KIT</a>
+                    <br/>
+                </div>
+                <div style="text-align: center">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="http://www.mangatar.net">
+                                <img style="max-width: 300px" src="http://www.mangatar.net/wp-content/uploads/2015/12/2X_logo-default-1.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.elfgamesworks.com">
+                                <img style="max-width: 300px" src="img/elfgamesworks.png">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
     <!-- /Call to Action -->
 
-    <div class="intro high">
-        <div class="col-md-6 col-md-offset-3 text-center">
-            <h3>Other networks:</h3>
-            <ul class="list-inline margin-bottom">
-                <li>
-                    <a href="//rpgmaker.net/games/6592/" target="_blank">
-                        <img src="//rpgmaker.net/games/6592/showcase/6592_small.png" width="160" height="118" alt="Little Briar Rose, an indie Adventure game for RPG Maker VX Ace "
-                        title="Little Briar Rose, an indie Adventure game for RPG Maker VX Ace ">
-                    </a>
-                </li>
-                <li>
-                    <a href="//freankexpo.net/726/Little-Briar-Rose">
-                        <img src="//www.freankexpo.net/signature/726.png" height="118" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="//www.indiedb.com/games/little-briar-rose" title="View Little Briar Rose on Indie DB" target="_blank">
-                        <img src="//button.indiedb.com/popularity/medium/games/41639.png" alt="Little Briar Rose" />
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
     <!-- Footer -->
-    <footer id="contact">
+<!--     <footer id="contact">
         <div class="container">
             <div class="row">
-                <p>Copyright &copy; 2015 <a href="//www.elfgamesworks.com/">Elf Games Works</a></p>
+                <p>Copyright &copy; 2016 <a href="//www.elfgamesworks.com/">Elf Games Works</a></p>
             </div>
         </div>
     </footer>
-    <!-- /Footer -->
+ -->    <!-- /Footer -->
 
     <!-- JavaScript -->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/parallax.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollex.min.js"></script>
+    <script type="text/javascript" src="js/jquery.poptrox.min.js"></script>
 
     <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
-    <script>
-    $("#menu-close, #menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    </script>
-    <script>
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+    <script type="text/javascript">
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
 
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    </script>
-    <script type="text/javascript" src="yoxview/yoxview-init.js"></script>
-    <script>
-        $("#portfolio").yoxview({
-            backgroundColor: 'black',
-            playDelay: 5000
-        });
+        $('#gallery')
+            .scrollex({
+                top:        '30vh',
+                bottom:     '30vh',
+                delay:      0,
+                initialize: function() {
 
-        function calculateCoverVideoSize() {
-            var w, h;
-            if ((window.innerWidth / window.innerHeight) > (16/9)) {
-                w = window.innerWidth;
-                h = window.innerWidth * 9 / 16;
-            } else {
-                w = window.innerHeight * 16 / 9;
-                h = window.innerHeight;
-            }
-            $('#background-video-container').css({
-                width: w,
-                height: h,
-                'margin-left': -w / 2  + window.innerWidth / 2
+                                var t = $(this);
+
+                                t.find('.row.images')
+                                    .addClass('inactive');
+
+                            },
+                terminate: function() {
+
+                               var t = $(this);
+
+                               t.find('.row.images')
+                                   .removeClass('inactive');
+
+                           },
+                enter: function() {
+
+                           var t = $(this),
+                               rows = t.find('.row.images'),
+                               length = rows.length,
+                               n = 0;
+
+                           rows.each(function() {
+                               var row = $(this);
+                               window.setTimeout(function() {
+                                   row.removeClass('inactive');
+                               }, 100 * (length - n++));
+                           });
+
+                       }
             });
-        }
 
-        calculateCoverVideoSize();
-        $(window).resize(calculateCoverVideoSize);
-
-        var tag = document.createElement('script');
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-        function onPlayerStateChange(event) {
-            switch(event.data) {
-                case YT.PlayerState.ENDED:
-                    $('#background-video').remove();
-                    // console.log('Video has ended.');
-                    break;
-                case YT.PlayerState.PLAYING:
-                    $('#background-video').css({ visibility: 'visible' });
-                    // console.log('Video is playing.');
-                    break;
-                case YT.PlayerState.PAUSED:
-                    // console.log('Video is paused.');
-                    break;
-                case YT.PlayerState.BUFFERING:
-                    // console.log('Video is buffering.');
-                    break;
-                case YT.PlayerState.CUED:
-                    // console.log('Video is cued.');
-                    break;
-            }
-        }
-
-        function onPlayerReady(event) {
-          event.target.setVolume(0);
-          event.target.playVideo();
-          var playing = true;
-        $('#background-video').css({ visibility: 'hidden' });
-          $(window).scroll(function(e) {
-              if (!playing && window.scrollY < (window.innerHeight / 2)) {
-                  event.target.playVideo();
-                  playing = true;
-              } else if (playing && window.scrollY >= (window.innerHeight / 2)) {
-                  event.target.pauseVideo();
-                  playing = false;
-              }
-          });
-        }
-        var player;
-        window.onYouTubeIframeAPIReady = function() {
-            player = new YT.Player('background-video', {
-                      height: '100%',
-                      width: '100%',
-                      videoId: '6tS2GZB8Zgc',
-                      playerVars: { 'showinfo' : 0, 'autoplay': 1, 'controls': 0, 'modestbranding' : 1, 'iv_load_policy': 3, 'autohide' : 1 },
-                      events: {
-                        'onReady': onPlayerReady,
-                        'onStateChange': onPlayerStateChange
-                      }
-                    });
-        }
+            $('.gallery').poptrox({
+                baseZIndex: 10001,
+                useBodyOverflow: false,
+                usePopupEasyClose: false,
+                overlayColor: '#000',
+                overlayOpacity: 0.65,
+                usePopupDefaultStyling: false,
+                usePopupCaption: true,
+                popupLoaderText: '',
+                usePopupNav: true
+            });
     </script>
 </body>
 </html>
