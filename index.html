@@ -159,12 +159,14 @@
         var scene = document.getElementById('scene');
         var parallax = new Parallax(scene);
 
+
         $('#gallery')
             .scrollex({
                 top:        '30vh',
                 bottom:     '30vh',
-                delay:      50,
+                delay:      0,
                 initialize: function() {
+                                console.log("enable!")
 
                                 var t = $(this);
 
@@ -173,6 +175,7 @@
 
                             },
                 terminate: function() {
+                               console.log("remove!")
 
                                var t = $(this);
 
