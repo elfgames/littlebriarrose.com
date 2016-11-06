@@ -661,7 +661,7 @@ h3 {
   transition: opacity 0.2s ease-in-out;
   position: absolute;
   top: 0;
-  width: 50%;
+  width: 100px;
   height: 100%;
   opacity: 0;
   cursor: pointer;
@@ -700,19 +700,34 @@ h3 {
 }
 
 .poptrox-popup .nav-next {
+  right: -100px;
+}
+
+.poptrox-popup .nav-next:before {
   right: 0;
 }
 
-  .poptrox-popup .nav-next:before {
-    right: 0;
-  }
-
 .poptrox-popup .nav-previous {
-  left: 0;
+  left: -100px;
 }
 
 .poptrox-popup .nav-previous:before {
   left: 0;
+}
+
+@media (max-width: 768px) {
+  .poptrox-popup .nav-next,
+  .poptrox-popup .nav-previous {
+    width: 50%;
+  }
+
+  .poptrox-popup .nav-next {
+    right: 0;
+  }
+
+  .poptrox-popup .nav-previous {
+    left: 0;
+  }
 }
 
 .poptrox-popup .closer {
