@@ -521,6 +521,10 @@ ul#scene {
   max-width: 200px;
 }
 
+.coming .stores-list img.active {
+  opacity: 1;
+}
+
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -766,4 +770,18 @@ h3 {
 
 .poptrox-popup:hover .closer:hover {
   opacity: 1.0;
+}
+
+.wallpaper {
+  padding-bottom: 80px;
+}
+
+.wallpaper h2 {
+  margin: 0;
+  font-size: 40px;
+  padding-bottom: 15px;
+}
+
+.wallpaper img {
+  width: 100%;
 }

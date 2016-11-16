@@ -90,10 +90,14 @@
         <div class="text-center"><img style="max-width: 90%" src="img/comingsoon.png" alt="coming late november"></div>
         <ul class="list-inline stores-list">
             <li>
-                <img src="img/store_apple.png" alt="available on apple store">
+                <a href="https://itunes.apple.com/app/little-briar-rose/id1160731868?mt=8" target="_blank" onclick="ga('send', 'event', 'Application', 'download', 'iOS Campaign');">
+                    <img src="img/store_apple.png" class="active" alt="available on apple store">
+                </a>
             </li>
             <li>
-                <img src="img/store_android.png" alt="available on google play store">
+                <a href="https://play.google.com/store/apps/details?id=net.mangatar.littlebriarrose" target="_blank" onclick="ga('send', 'event', 'Application', 'download', 'Android Campaign');">
+                    <img src="img/store_android.png" class="active" alt="available on google play store">
+                </a>
             </li>
             <li>
                 <img src="img/store_windows.png" alt="available on windows phone store">
@@ -103,6 +107,31 @@
             </li>
         </ul>
     </div>
+
+    <!-- Wallpapers -->
+    <div id="wallpaper" class="portfolio wallpaper text-center">
+        <div class="content container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="bluu-next">LITTLE BRIAR ROSE WALLPAPERS</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-8 col-md-4 col-xs-offset-2">
+                    <a href="img/wallpapers/Wallpaper-LBR-NoTitle.jpg" download target="_blank" onclick="ga('send', 'event', 'Wallpaper', 'download', 'Wallpaper Campaign', 1);">
+                        <img src="img/wallpapers/Wallpaper-LBR-NoTitle_Thumb.jpg" alt="wallpaper">
+                    </a>
+                </div>
+                <div class="col-xs-8 col-md-4 col-xs-offset-2 col-md-offset-0" onclick="ga('send', 'event', 'Wallpaper', 'download', 'Wallpaper Campaign', 2);">
+                    <a href="img/wallpapers/Wallpaper-LBR-Title.jpg" download target="_blank">
+                        <img src="img/wallpapers/Wallpaper-LBR-Title_Thumb.jpg" alt="wallpaper">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Portfolio -->
+
 
     <!-- Portfolio -->
     <div id="gallery" class="portfolio">
