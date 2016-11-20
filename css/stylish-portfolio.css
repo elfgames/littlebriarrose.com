@@ -782,6 +782,13 @@ h3 {
   padding-bottom: 15px;
 }
 
+.wallpaper h3 {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+  padding-bottom: 15px;
+}
+
 .wallpaper img {
   width: 100%;
 }
