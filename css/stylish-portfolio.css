@@ -785,3 +785,7 @@ h3 {
 .wallpaper img {
   width: 100%;
 }
+
+#gallery {
+  overflow: hidden;
+}
