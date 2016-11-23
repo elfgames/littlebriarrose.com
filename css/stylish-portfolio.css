@@ -10,7 +10,7 @@ body {
 body {
   overflow-x: hidden;
 }
-h2 {
+h2, h3, h4, p {
   color: white;
 }
 
@@ -795,4 +795,28 @@ h3 {
 
 #gallery {
   overflow: hidden;
+}
+
+.quotings {
+  color: white;
+  font-size: 23px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.quotings li {
+  padding-bottom: 100px;
+}
+
+.quotings li:last-child {
+  padding-bottom: 0;
+}
+
+.quotings .author {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.quotings .author a {
+  text-decoration: underline;
 }
