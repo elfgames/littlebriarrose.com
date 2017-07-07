@@ -93,9 +93,11 @@
                     <img src="img/store_amazon.png" class="active" alt="little briar rose is available on amazon">
                 </a>
             </li>
-<!--             <li>
-                <img src="img/store_windows.png" alt="soon available on windows phone store" title="soon available on windows phone store">
-            </li> -->
+            <li>
+                <a href="https://gamejolt.com/games/little-briar-rose/253157" target="_blank" onclick="ga('send', 'event', 'Application', 'download', 'GameJolt Campaign');">
+                    <img src="img/store_gamejolt.png" class="active" alt="Available on Game Jolt" title="Available on Game Jolt">
+                </a>
+            </li>
             <li>
                 <a href="http://store.steampowered.com/app/555290" target="_blank" onclick="ga('send', 'event', 'Application', 'download', 'Steam Campaign');">
                     <img src="img/store_steam.png" class="active" alt="little briar rose is available on steam">
@@ -206,8 +208,10 @@
     <!-- Intro -->
     <div id="portfolio" class="portfolio">
         <div class="container">
-            <div class="videoWrapper">
-                <iframe src="http://www.youtube.com/embed/wFFKtb0OU_Q?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+            <div class="wrap-video">
+                <div class="videoWrapper">
+                    <iframe src="http://www.youtube.com/embed/wFFKtb0OU_Q?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </div>
@@ -375,7 +379,6 @@
 
                            },
                 enter: function() {
-                           console.log("enter!")
                            var t = $(this),
                                rows = t.find('.row.images'),
                                length = rows.length,

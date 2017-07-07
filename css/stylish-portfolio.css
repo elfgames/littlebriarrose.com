@@ -525,6 +525,11 @@ ul#scene {
   opacity: 1;
 }
 
+.wrap-video {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -801,7 +806,6 @@ h3 {
   color: white;
   font-size: 23px;
   list-style-type: none;
-  text-align: center;
 }
 
 .quotings li {
