@@ -860,6 +860,8 @@ h3 {
   cursor: pointer;
   display: block;
   transition: all 200ms;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .sticker:hover {
