@@ -855,3 +855,13 @@ h3 {
   background: url(../img/wreath_right.png) no-repeat;
   background-size: contain;
 }
+
+.sticker {
+  cursor: pointer;
+  display: block;
+  transition: all 200ms;
+}
+
+.sticker:hover {
+  transform: scale(1.05);
+}
